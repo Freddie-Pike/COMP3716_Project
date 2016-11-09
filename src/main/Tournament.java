@@ -10,6 +10,7 @@ public class Tournament {
 	
 	public Tournament(int id) {
 		this.id = id;
+		this.teams = new ArrayList<Team>();
 	}
 	
 	public void setFormat(TournamentFormat format) {
@@ -17,12 +18,24 @@ public class Tournament {
 	}
 	
 	//If format is selected, then call the formats sortTeams method.
-	public void generateTeams() {
+	public void generateTeamCollection() {
 		if (format != null) {
 			format.sortTeamsToCollection(teams);
 		}
 		else {
 			return;
 		}
+	}
+	
+	public int getNumOfTeams() {
+		return this.teams.size();
+	}
+	
+	public void addTeam(String name) {
+		teams.add(new Team(name));
+	}
+	
+	public void simulateTour() {
+		format.simulateGames();
 	}
 }

@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public abstract class TournamentFormat {
 	
 	//How are matches stored? EX: Bracket, Division, etc
-	private CollectionType collectionType;
+	protected CollectionType collectionType;
 	
 	public TournamentFormat() {}
 	
@@ -18,6 +18,10 @@ public abstract class TournamentFormat {
 	
 	public CollectionType getCollectionType() {
 		return this.collectionType;
+	}
+	
+	public void simulateGames() {
+		collectionType.advanceTeams();
 	}
 	
 }
