@@ -1,17 +1,19 @@
-package main;
+package schedules;
 
 import java.util.ArrayList;
 
-public abstract class CollectionType {
+import main.Game;
+
+public abstract class Schedule {
 
 	protected ArrayList<Game> games;
 	
-	public CollectionType() {
+	public Schedule() {
 		this.games = new ArrayList<Game>();
 	}
 	
-	//Add game to collection
-	public void addGameToCollection(Game game) {
+	//Add game to schedule
+	public void addGameToSchedule(Game game) {
 		this.games.add(game);
 	}
 	

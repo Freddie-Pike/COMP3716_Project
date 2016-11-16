@@ -1,5 +1,6 @@
 package tester;
 
+import formats.SingleElimination;
 import main.Tournament;
 
 public class TournamentTester {
@@ -22,9 +23,9 @@ public class TournamentTester {
 		System.out.println("Teams added");
 		//Set tournament format to single elimination
 		tour.setFormat(new SingleElimination());
-		System.out.println("Format set");
+		System.out.println("Format set to: " + tour.getFormat().toString());
 		tour.generateTeamCollection();
-		System.out.println("Collections set");
+		System.out.println("Schedule set to: " + tour.getFormat().getSchedule().toString());
 		tour.simulateTour();
 	}
 }

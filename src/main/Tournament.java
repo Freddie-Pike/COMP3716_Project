@@ -2,6 +2,8 @@ package main;
 
 import java.util.ArrayList;
 
+import formats.TournamentFormat;
+
 public class Tournament {
 
 	private int id;
@@ -17,10 +19,14 @@ public class Tournament {
 		this.format = format;
 	}
 	
+	public TournamentFormat getFormat() {
+		return this.format;
+	}
+	
 	//If format is selected, then call the formats sortTeams method.
 	public void generateTeamCollection() {
 		if (format != null) {
-			format.sortTeamsToCollection(teams);
+			format.sortTeamsToSchedule(teams);
 		}
 		else {
 			return;

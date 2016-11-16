@@ -1,9 +1,8 @@
-package tester;
+package schedules;
 
-import main.CollectionType;
 import main.Game;
 
-public class Bracket extends CollectionType {
+public class Bracket extends Schedule {
 	
 	public Bracket() {}
 
@@ -14,5 +13,10 @@ public class Bracket extends CollectionType {
 		for (Game g : games) {
 			System.out.println("Winner: " + g.determineWinner().toString());
 		}
+	}
+	
+	@Override
+	public String toString() {
+		return "Bracket";
 	}
 }
