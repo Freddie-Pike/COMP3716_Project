@@ -1,0 +1,10 @@
+The following text files represent the different databases that this program will contain:
+
+Login_Information.txt
+
+Column 0	Column 1
+Name		Password
+
+Name - The name of the user 
+Password - The user's password.
+

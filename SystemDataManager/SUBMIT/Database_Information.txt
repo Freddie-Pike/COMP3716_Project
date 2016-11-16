@@ -1,0 +1,10 @@
+The following text files represent the different databases that this program will contain:
+
+Tournament_Information.txt
+
+Column 0	Column 1
+ID			Organizer Name
+
+ID - A unique ID associated with each tournament
+Organizer Name - The name of the person who started the tournamnet.
+
