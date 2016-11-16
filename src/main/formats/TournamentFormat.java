@@ -1,9 +1,9 @@
-package formats;
+package main.formats;
 
 import java.util.ArrayList;
 
 import main.Team;
-import schedules.Schedule;
+import main.schedule.Schedule;
 
 public abstract class TournamentFormat {
 	

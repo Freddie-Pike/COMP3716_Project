@@ -1,3 +1,5 @@
+package main.gui;
+
 import javax.swing.JFrame;
 
 public class LoginRunner

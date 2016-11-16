@@ -1,4 +1,4 @@
-package schedules;
+package main.schedule;
 
 import java.util.ArrayList;
 

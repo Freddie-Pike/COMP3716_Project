@@ -1,10 +1,10 @@
-package formats;
+package main.formats;
 
 import java.util.ArrayList;
 
 import main.Game;
 import main.Team;
-import schedules.Bracket;
+import main.schedule.Bracket;
 
 public class SingleElimination extends TournamentFormat {
 

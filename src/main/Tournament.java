@@ -2,16 +2,18 @@ package main;
 
 import java.util.ArrayList;
 
-import formats.TournamentFormat;
+import main.formats.TournamentFormat;
 
 public class Tournament {
 
 	private int id;
 	private ArrayList<Team> teams;
 	private TournamentFormat format;
+	private String organizer;
 	
-	public Tournament(int id) {
+	public Tournament(int id, String organizer) {
 		this.id = id;
+		this.organizer = organizer;
 		this.teams = new ArrayList<Team>();
 	}
 	

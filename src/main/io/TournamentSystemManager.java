@@ -1,8 +1,13 @@
+package main.io;
+
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+
+import main.Tournament;
 
 public class TournamentSystemManager {
 	List<Tournament> tournamentList = new ArrayList<Tournament>();

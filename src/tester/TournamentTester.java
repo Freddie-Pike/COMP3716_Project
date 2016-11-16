@@ -1,7 +1,7 @@
 package tester;
 
-import formats.SingleElimination;
 import main.Tournament;
+import main.formats.SingleElimination;
 
 public class TournamentTester {
 
@@ -9,7 +9,7 @@ public class TournamentTester {
 		//Set an id
 		int id = 0;
 		//Create new tournament with id
-		Tournament tour = new Tournament(id);
+		Tournament tour = new Tournament(id, "Test");
 		System.out.println("Tournament created.");
 		//Add 8 teams
 		tour.addTeam("Team Awesome");

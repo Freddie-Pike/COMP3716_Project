@@ -1,5 +1,6 @@
-/**
- * A class that compares performance of teo symbol table implementations
+package main.io;
+
+/**A class that compares performance of teo symbol table implementations
  * @author Fred
  *
  */

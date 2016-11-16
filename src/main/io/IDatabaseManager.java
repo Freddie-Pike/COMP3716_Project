@@ -1,6 +1,8 @@
-interface DatabaseManager {
+package main.io;
+
+interface IDatabaseManager {
 	/**
-	 * Print out entire contents of the text file.
+	 * Print out enre contents of the text file.
 	 */
 	public void PrintContents();
 	

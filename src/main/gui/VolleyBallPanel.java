@@ -1,5 +1,12 @@
-import java.awt.*;
-import javax.swing.*;
+package main.gui;
+
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Font;
+
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
 
 public class VolleyBallPanel extends JPanel
 {

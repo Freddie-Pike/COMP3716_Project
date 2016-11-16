@@ -1,9 +1,13 @@
+package main.io;
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class TextDatabaseManager implements DatabaseManager {
+import main.Tournament;
+
+public class TextDatabaseManager implements IDatabaseManager {
 	private String fileName;
 	private FileReader fileReader;
 	private String line;
