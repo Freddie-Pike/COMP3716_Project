@@ -1,10 +1,37 @@
 The following text files represent the different databases that this program will contain:
 
-Login_Information.txt
+							Game_BasicInfo_RANDOMSTRING.txt
 
-Column 0	Column 1
-Name		Password
+Purpose: This text file represents the initial tournament information. 
 
-Name - The name of the user 
-Password - The user's password.
+Column 0	Column 1		Column 2	Column 3	Column 4	Column 5	Column 6	Column 7
+ID			Organizer Name	Min Teams	Max Teams	Min_Players	Max_Players	Format		Deadline
+
+What each one means: 
+
+ID - int - A unique ID associated with each tournament
+Organizer Name - String - The name of the person who started the tournament.
+Min Teams - int - The minimum number of teams necessary for the tournament
+Max Teams - int - The maximum number of teams necessary for the tournament
+Min Players - int - The minimum number of players necessary for the tournament. 
+Max Players - int - The maximum number of players necessary for the tournament.
+Format - String - The format of the tournament.
+Deadline - Date - The date of the deadline.  
+
+ 
+								Game_RANDOMSTRING.txt
+
+Purpose: This text file represents the text file that is created once the tournament starts.
+
+Column 0	Column 1	Column 2	Column 3 	Column 4
+Team1		Team2 		Winner		Venue		gameTime
+
+Team1 - Team - The first Team in the game.
+Team2 - Team - The second Team in the game.
+Winner - Team - The winning Team of the game.
+Venue - Venue - The venue the game is taking place. 
+gameTime - Date - The data that the game is taking place. 
+
+								Program_Archive
+
 
