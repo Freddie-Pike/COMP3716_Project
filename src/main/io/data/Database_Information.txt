@@ -5,7 +5,7 @@ The following text files represent the different databases that this program wil
 Purpose: This text file represents the initial tournament information. 
 
 Column 0	Column 1		Column 2	Column 3	Column 4	Column 5	Column 6	Column 7
-ID			Organizer Name	Min Teams	Max Teams	Min_Players	Max_Players	Format		Deadline
+ID			Organizer Name	Min Teams	Max Teams	Min_Players	Max_Players	Format		Deadline_y
 
 What each one means: 
 
@@ -16,9 +16,11 @@ Max Teams - int - The maximum number of teams necessary for the tournament
 Min Players - int - The minimum number of players necessary for the tournament. 
 Max Players - int - The maximum number of players necessary for the tournament.
 Format - String - The format of the tournament.
-Deadline - Date - The date of the deadline.  
+Deadline_y - String - The year of the deadline.  
+Deadline_m - String - The month of the deadline.  
+Deadline_d - String - The day of the deadline.
 
- 
+  
 								Game_RANDOMSTRING.txt
 
 Purpose: This text file represents the text file that is created once the tournament starts.
@@ -32,6 +34,23 @@ Winner - Team - The winning Team of the game.
 Venue - Venue - The venue the game is taking place. 
 gameTime - Date - The data that the game is taking place. 
 
-								Program_Archive
+																
+								Tournament_Listing.txt 
+								
+Purpose: To list all the tournaments for a user to search for. To be used to update/delete a tournament  
+when a tournament starts. 
+
+Column 0	Column 1 	Column 2	Column 3			Column 4
+Game_ID		tName		Organizer	numTeamsSigned		Max Teams
+
+Game_ID - String - Game_ID of the tournament  
+tName - String - The name of tournament 
+Organizer - String - The name of the organizer running the tournament.
+numTeamsSigned - int - The number of teams of registered for the tournament 
+Max Teams - int - The maximum number of teams allowed for the tournament. 
+
+
+								Tournamnet_Archive
+								
 
 
