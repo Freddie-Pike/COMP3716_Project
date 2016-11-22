@@ -1,3 +1,7 @@
+package tester;
+
+import main.io.TextDatabaseTools;
+
 /**
  * A class that tests out the maining system information part of the architecture. It adds a row to a textfile 
  * database and the prints out the contents of the database.

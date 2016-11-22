@@ -1,5 +1,6 @@
+package main.io;
 
-interface DatabaseManager {
+interface IDatabaseManager {
 
 	public void createFile(String fileName);
 	

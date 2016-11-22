@@ -1,9 +1,11 @@
+package main.io;
+
 /**
  * This interface will classes to inherit database principles in order to make the program extendible. 
  * @author Freddie Pike
  *
  */
-interface DatabaseTools {
+interface IDatabaseTools {
 	/**
 	 * Print out entire contents of the database.
 	 */

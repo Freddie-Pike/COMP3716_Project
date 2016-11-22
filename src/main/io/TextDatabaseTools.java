@@ -1,10 +1,12 @@
+package main.io;
+
 import java.io.*;
 import java.nio.file.*;
 import java.util.ArrayList;
 import java.util.EmptyStackException;
 import java.util.List;
 
-public class TextDatabaseTools implements DatabaseTools {
+public class TextDatabaseTools implements IDatabaseTools {
 	private String fileName;
 	
 	/** 
