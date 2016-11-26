@@ -1,6 +1,7 @@
 package main.gui;
 
 import javax.swing.JFrame;
+import java.awt.Color;
 
 public class VolleyBallRunner
 {
@@ -9,12 +10,15 @@ public class VolleyBallRunner
      */
     public static void main(String[] args)
     {
-        JFrame frame = new JFrame("Main Menu");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(500, 600);
+    	
         VolleyBallPanel panel = new VolleyBallPanel();
-        frame.add(panel);
-        frame.setVisible(true);
+        panel.frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        panel.frame.setSize(300, 275);
+        panel.frame.setResizable(false); // let's not allow this shitshow
+        panel.frame.setLocationRelativeTo(null); // center the window
+        panel.setBackground(Color.LIGHT_GRAY);
+        panel.frame.getContentPane().add(panel);
+        panel.frame.setVisible(true);
 
     }
 }
