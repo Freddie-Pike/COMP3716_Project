@@ -25,19 +25,20 @@ public class LoginPanel extends JPanel
 
     public LoginPanel()
     {
-        setBackground(Color.blue);
+        setBackground(Color.LIGHT_GRAY);
         for(int i = 0; i < languages.length; i++)
-            comboBox.addItem(languages[count++]);
+            comboBox.addItem(languages[i]);
         Header = new JLabel("Welcome to the Login Page");
-        Font f = new Font("Comic Sans MS", Font.BOLD, 16);
+        Font f = new Font("Georgia", Font.BOLD, 16);
         JPanel DatLogin = new JPanel();
-        DatLogin.setPreferredSize(new Dimension(280,80));
-        Header.setFont(f);
+        DatLogin.setPreferredSize(new Dimension(280,110));
+        Header.setFont(new Font("Georgia", Font.BOLD, 16));
         Q = new JLabel("Enter your name:");
         Submit = new JButton("Submit");
         UserName = new JTextField(15);
         DatLogin.add(Q);
         DatLogin.add(UserName);
+        comboBox.setSelectedIndex(0);
         DatLogin.add(comboBox);
         DatLogin.add(Submit);
         add(Header);

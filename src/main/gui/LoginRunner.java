@@ -1,6 +1,7 @@
 package main.gui;
 
 import javax.swing.JFrame;
+import java.awt.Color;
 
 public class LoginRunner
 {
@@ -11,9 +12,10 @@ public class LoginRunner
     {
         JFrame frame = new JFrame("Login");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(500, 600);
+        frame.setSize(300, 200);
         LoginPanel panel = new LoginPanel();
-        frame.add(panel);
+        panel.setBackground(Color.LIGHT_GRAY);
+        frame.getContentPane().add(panel);
         frame.setVisible(true);
 
     }
