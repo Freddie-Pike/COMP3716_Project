@@ -3,6 +3,7 @@ package main.schedule;
 import java.util.ArrayList;
 
 import main.Game;
+import main.Team;
 
 public abstract class Schedule {
 
@@ -17,7 +18,20 @@ public abstract class Schedule {
 		this.games.add(game);
 	}
 	
-	public abstract void advanceTeams();
+	public void resetSchedule() {
+		this.games = new ArrayList<Game>();
+	}
+	
+	public boolean hasGames() {
+		return this.games.size() > 0 ? true : false;
+	}
+	
+	public int getNumberOfGames() {
+		return this.games.size();
+	}
+	
+	// Returns winners
+	public abstract ArrayList<Team> advanceTeams();
 	
 
 }
