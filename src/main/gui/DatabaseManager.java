@@ -1,6 +1,6 @@
-package main.io;
+package main.gui;
 
-interface IDatabaseManager {
+interface DatabaseManager {
 
 	public void createFile(String fileName);
 	

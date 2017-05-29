@@ -3,7 +3,7 @@ package main.gui;
 import javax.swing.JFrame;
 import java.awt.Color;
 
-public class VolleyBallRunner
+public class LoginPageRunner
 {
     /**
      Creates the main frame of the program.
@@ -11,7 +11,7 @@ public class VolleyBallRunner
     public static void main(String[] args)
     {
     	
-        VolleyBallPanel panel = new VolleyBallPanel();
+        LoginPagePanel panel = new LoginPagePanel();
         panel.frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         panel.frame.setSize(300, 275);
         panel.frame.setResizable(false); // let's not allow this shitshow
@@ -19,6 +19,5 @@ public class VolleyBallRunner
         panel.setBackground(Color.LIGHT_GRAY);
         panel.frame.getContentPane().add(panel);
         panel.frame.setVisible(true);
-
     }
 }

@@ -1,8 +1,7 @@
-package main.io;
-
+package main.gui;
 import java.io.File;
 
-public class TextDatabaseManager implements IDatabaseManager {
+public class TextDatabaseManager implements DatabaseManager {
 	
 	public TextDatabaseManager() { }
 	

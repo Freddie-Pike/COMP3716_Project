@@ -58,7 +58,7 @@ public class TextDatabaseTools implements DatabaseTools {
 	        while((line = bufferedReader.readLine()) != null) 
 	        {
 	        	splitLine = line.split("/");
-	        	System.out.print("Row = " + rowCount + " ");
+	        	System.out.print("Row = " + rowCount + ":    ");
 	        	for (int i = 0; i < splitLine.length; i++) {
 	        		System.out.print(splitLine[i] + " ");
 	        		// Another way to print out: System.out.print("Column " + i + " value = " + splitLine[i] + " ");
@@ -341,7 +341,7 @@ public class TextDatabaseTools implements DatabaseTools {
 			
 			// Nested for loop that writes each element from the array to the text file. 
 			for (int i = 0; i < updateArray.length; i++) {
-	    		for (int j = 0; j < updateArray.length; j++) {
+	    		for (int j = 0; j < updateArray[0].length; j++) {
 	    			if (updateArray[i][j] == null) break;
 	    			bufferedWriter.write(updateArray[i][j] + "/");
 	    		}
@@ -440,7 +440,7 @@ public class TextDatabaseTools implements DatabaseTools {
 	        {
 	        	splitLine = line.split("/");
 	        	tempList.add(splitLine[column]);
-	        	System.out.println("Column " + column + " " + splitLine[column]);
+	        	// System.out.println("Column " + column + " " + splitLine[column]);
 	        }
 	        // Always close files.
 	        bufferedReader.close();
